@@ -1,0 +1,101 @@
+.TodoList {
+  margin: 0 auto;
+  padding: 2rem 3rem 3rem;
+  max-width: 100%;
+  background: #ff6666;
+  color: #fff;
+  box-shadow: -20px -20px 0px 0px rgba(100, 100, 100, 0.1);
+  overflow: hidden;
+}
+
+.TodoList-container {
+  margin-top: 2.6rem;
+}
+
+.Add-btn {
+  padding: 0.5rem 1.3rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* margin-left: 5px; */
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: background 0.4s ease-out;
+  outline: none;
+  font-size: 0.7rem;
+}
+
+.TodoList h1 {
+  font-weight: normal;
+  font-size: 2.6rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.TodoList h1 span {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
+  margin-left: 3px;
+  margin-top: 0.2rem;
+}
+
+.TodoList p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.7rem;
+  font-style: italic;
+  margin-left: 3px;
+  margin-bottom: -1.3rem;
+  margin-top: 0.8rem;
+}
+
+.TodoList-item {
+  transition: 1s ease-out;
+}
+
+.todo-enter {
+  opacity: 0;
+}
+
+.todo-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.todo-exit {
+  opacity: 1;
+}
+
+.todo-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 500ms ease-in-out;
+}
+
+.Todo .Todo-buttons i {
+  display: inline-block;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .TodoList {
+    padding: 1rem;
+  }
+
+  .TodoList h1 {
+    font-size: 2rem;
+  }
+
+  .TodoList h1 span {
+    font-size: 2.2vw;
+  }
+
+  .TodoList p {
+    font-size: 0.6rem;
+  }
+}
